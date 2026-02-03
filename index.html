@@ -1,0 +1,369 @@
+
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JuriX — IA Jurídica</title>
+  <meta name="description" content="JuriX é a IA Jurídica por assinatura. Assine, receba sua licença e use." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="bg">
+    <div class="orb orb--1"></div>
+    <div class="orb orb--2"></div>
+    <div class="grid"></div>
+  </div>
+
+  <header class="topbar">
+    <div class="wrap topbar__inner">
+      <a class="brand" href="#top">
+        <div class="brand__mark" aria-hidden="true"><span>JX</span></div>
+        <div class="brand__text">
+          <div class="brand__name">JuriX</div>
+          <div class="brand__tag">IA Jurídica • Assinatura • Licença</div>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <a href="#recursos">Recursos</a>
+        <a href="#planos">Planos</a>
+        <a href="#suporte">Suporte</a>
+      </nav>
+
+      <div class="topbar__cta">
+        <a class="btn btn--primary" href="#planos">Assinar</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero__grid">
+        <div class="hero__left">
+          <div class="pill">
+            <span class="dot"></span>
+            <span>Checkout via Mercado Pago • Pix opcional</span>
+          </div>
+
+          <h1>Seu jurídico com mais velocidade e consistência.</h1>
+
+          <p class="lead">
+            <strong>JuriX</strong> organiza o fluxo e acelera tarefas repetitivas.
+            Você assina, recebe sua <strong>licença</strong> e usa no app.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#planos">Ver planos</a>
+            <a class="btn btn--ghost" href="#recursos">Ver recursos</a>
+          </div>
+
+          <div class="stats">
+            <div class="stat">
+              <div class="stat__k">Distribuição</div>
+              <div class="stat__v">Windows (app + licença)</div>
+            </div>
+            <div class="stat">
+              <div class="stat__k">Pagamento</div>
+              <div class="stat__v">Mercado Pago / Pix</div>
+            </div>
+            <div class="stat">
+              <div class="stat__k">Entrega</div>
+              <div class="stat__v">Licença por e-mail/WhatsApp</div>
+            </div>
+          </div>
+
+          <div class="note">
+            <strong>Importante:</strong> a licença é necessária para liberar o uso no aplicativo.
+          </div>
+        </div>
+
+        <div class="hero__right">
+          <div class="panel">
+            <div class="panel__head">
+              <div class="panel__title">Status</div>
+              <div class="chip" id="chipStatus">Aguardando licença</div>
+            </div>
+
+            <div class="panel__row">
+              <div class="panel__item">
+                <div class="lbl">Licença</div>
+                <div class="val mono" id="licenseMasked">—</div>
+              </div>
+              <div class="panel__item">
+                <div class="lbl">Validade</div>
+                <div class="val" id="validity">—</div>
+              </div>
+            </div>
+
+            <div class="panel__actions">
+              <a class="btn btn--primary" href="#planos">Pegar minha licença</a>
+              <a class="btn btn--ghost" href="#ativar">Inserir licença</a>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="miniList">
+              <div class="miniItem">
+                <div class="miniIcon" aria-hidden="true">💳</div>
+                <div>
+                  <div class="miniTitle">Pagamento simples</div>
+                  <div class="miniText">Mercado Pago ou Pix.</div>
+                </div>
+              </div>
+              <div class="miniItem">
+                <div class="miniIcon" aria-hidden="true">🔐</div>
+                <div>
+                  <div class="miniTitle">Licença</div>
+                  <div class="miniText">Você recebe e cola no app.</div>
+                </div>
+              </div>
+              <div class="miniItem">
+                <div class="miniIcon" aria-hidden="true">⚡</div>
+                <div>
+                  <div class="miniTitle">Setup rápido</div>
+                  <div class="miniText">Tudo em poucos minutos.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="fineprint">
+            Ao assinar, você concorda com Termos e Política do JuriX.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECURSOS -->
+    <section id="recursos" class="section">
+      <div class="wrap">
+        <div class="section__head">
+          <h2>Recursos</h2>
+          <p>Direto ao ponto. O que ajuda no dia a dia.</p>
+        </div>
+
+        <div class="cards">
+          <div class="card">
+            <div class="card__icon">📌</div>
+            <h3>Fluxo organizado</h3>
+            <p>Padroniza etapas, reduz retrabalho e mantém consistência.</p>
+          </div>
+
+          <div class="card">
+            <div class="card__icon">🧠</div>
+            <h3>Geração assistida</h3>
+            <p>Ajuda a construir peças com estrutura e linguagem jurídica.</p>
+          </div>
+
+          <div class="card">
+            <div class="card__icon">🔍</div>
+            <h3>Menos ruído</h3>
+            <p>Foco no essencial: entrada clara → saída clara.</p>
+          </div>
+
+          <div class="card">
+            <div class="card__icon">🛠️</div>
+            <h3>Atualizações</h3>
+            <p>Melhorias e correções durante o período de assinatura.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLANOS -->
+    <section id="planos" class="section section--dark">
+      <div class="wrap">
+        <div class="section__head">
+          <h2>Planos</h2>
+          <p>Preencha seus dados e escolha o plano. Você recebe sua licença por e-mail/WhatsApp.</p>
+        </div>
+
+        <div class="portalBox" style="margin-bottom:16px;">
+          <div>
+            <div class="portalTitle">Cadastro rápido (para emissão da licença)</div>
+            <div class="portalText">Esses dados são usados apenas para entrega e suporte.</div>
+          </div>
+        </div>
+
+        <div class="activate" style="margin-top:0;">
+          <div class="activate__box">
+            <label for="leadNome">Nome</label>
+            <input id="leadNome" class="input" placeholder="Seu nome completo" autocomplete="name" />
+
+            <label for="leadEmail" style="margin-top:10px;">E-mail</label>
+            <input id="leadEmail" class="input" placeholder="voce@exemplo.com" autocomplete="email" />
+
+            <label for="leadWpp" style="margin-top:10px;">WhatsApp</label>
+            <input id="leadWpp" class="input" placeholder="(DDD) 9XXXX-XXXX" autocomplete="tel" />
+
+            <div class="help" style="margin-top:10px;">
+              Depois do pagamento, você recebe a licença nesse contato.
+            </div>
+          </div>
+
+          <div class="activate__info">
+            <div class="infoCard">
+              <h3>Entrega da licença</h3>
+              <ul>
+                <li>Mercado Pago: você finaliza no checkout seguro.</li>
+                <li>Pix: envie comprovante no WhatsApp.</li>
+                <li>Após confirmação, enviamos sua licença.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="plans">
+          <div class="plan">
+            <div class="plan__top">
+              <div class="plan__name">Mensal</div>
+              <div class="plan__price">R$ 60 <span>/mês</span></div>
+              <div class="plan__desc">Ideal para começar.</div>
+            </div>
+
+            <ul class="plan__list">
+              <li>1 licença = 1 computador (padrão)</li>
+              <li>Atualizações incluídas</li>
+              <li>Suporte por WhatsApp/E-mail</li>
+            </ul>
+
+            <a class="btn btn--primary w100" id="btnMensal" href="#" data-mp="https://mpago.la/18bbmuK">
+              Assinar com Mercado Pago
+            </a>
+
+            <div class="hint">Se ainda não tiver link do checkout, o botão cai no WhatsApp.</div>
+          </div>
+
+          <div class="plan plan--featured">
+            <div class="ribbon">Mais escolhido</div>
+            <div class="plan__top">
+              <div class="plan__name">Anual</div>
+              <div class="plan__price">R$ 600 <span>/ano</span></div>
+              <div class="plan__desc">Economia no longo prazo.</div>
+            </div>
+
+            <ul class="plan__list">
+              <li>1 licença = 1 computador (padrão)</li>
+              <li>Atualizações incluídas</li>
+              <li>Suporte prioritário</li>
+            </ul>
+
+            <a class="btn btn--primary w100" id="btnAnual" href="#" data-mp="https://mpago.la/1h5f36D">
+              Assinar com Mercado Pago
+            </a>
+
+            <div class="hint">Se ainda não tiver link do checkout, o botão cai no WhatsApp.</div>
+          </div>
+
+          <div class="plan">
+            <div class="plan__top">
+              <div class="plan__name">Pix (manual)</div>
+              <div class="plan__price">R$ 60 <span>/mês</span></div>
+              <div class="plan__desc">Pagamento direto + ativação manual.</div>
+            </div>
+
+            <ul class="plan__list">
+              <li>Copie a chave Pix</li>
+              <li>Envie comprovante</li>
+              <li>Receba sua licença</li>
+            </ul>
+
+            <a class="btn btn--ghost w100" id="btnPixWA" href="#">
+              Pagar no Pix (WhatsApp)
+            </a>
+            <div class="hint">Abre WhatsApp com mensagem pronta.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- SUPORTE -->
+    <section id="suporte" class="section section--soft">
+      <div class="wrap">
+        <div class="section__head">
+          <h2>Suporte</h2>
+          <p>Pix: envie o comprovante e solicite sua licença. Mercado Pago: informe seu e-mail.</p>
+        </div>
+
+        <div class="support">
+          <div class="support__box">
+            <h3>Contato</h3>
+
+            <div class="portalBox" style="margin-top:12px;">
+              <div>
+                <div class="portalTitle">WhatsApp</div>
+                <div class="portalText mono">(11) 92100-4554</div>
+              </div>
+              <a class="btn btn--primary" href="https://wa.me/5511921004554" target="_blank" rel="noopener">
+                Abrir WhatsApp
+              </a>
+            </div>
+
+            <div class="portalBox" style="margin-top:10px;">
+              <div>
+                <div class="portalTitle">E-mail</div>
+                <div class="portalText mono">advogadosinteligentes00@gmail.com</div>
+              </div>
+              <a class="btn btn--ghost" href="mailto:advogadosinteligentes00@gmail.com">
+                Enviar e-mail
+              </a>
+            </div>
+
+            <div class="divider"></div>
+
+            <h3>Pix (manual)</h3>
+            <p class="small">Chave Pix (copiar):</p>
+
+            <div class="pixRow">
+              <div class="pix mono" id="pixKey">8fdc8bd8-e9a8-42f0-9f8e-c8f474133416</div>
+              <button class="btn btn--ghost" id="btnCopyPix">Copiar</button>
+            </div>
+
+            <div class="small">
+              Depois do Pix, envie o comprovante no WhatsApp e peça sua licença.
+            </div>
+          </div>
+
+          <div class="support__box">
+            <h3>FAQ rápido</h3>
+
+            <details>
+              <summary>Como cadastro meu cartão?</summary>
+              <p>Você finaliza no checkout seguro do Mercado Pago. Nada de cartão é digitado neste site.</p>
+            </details>
+
+            <details>
+              <summary>Quanto tempo para receber a licença?</summary>
+              <p>Após confirmação do pagamento, enviamos sua licença por e-mail/WhatsApp.</p>
+            </details>
+
+            <details>
+              <summary>Posso usar em mais de um computador?</summary>
+              <p>O padrão é 1 licença por computador. Se precisar de mais, fale no suporte.</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div class="muted">© <span id="year"></span> JuriX</div>
+      <div class="footer__links">
+        <a href="#" onclick="alert('Coloque aqui sua Política de Privacidade.'); return false;">Política</a>
+        <a href="#" onclick="alert('Coloque aqui seus Termos de Uso.'); return false;">Termos</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
